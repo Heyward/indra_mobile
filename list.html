@@ -1,0 +1,18 @@
+<div id="title">Indra Colombia</div>
+
+<div id="filter">
+    <input type="text" ng-model="search.name"/>
+</div>
+
+<ul id="list">
+    <li ng-repeat="aEmployee in employees | filter:search">
+        <a href="#/detail/{{aEmployee.id}}" class="item">
+            <img src="http://54.186.232.121/indra/uploads/{{aEmployee.id}}.png" />
+            <div class="content">
+                <span class="bold">{{aEmployee.name}} {{aEmployee.last_name}}</span>
+                <br />
+                <span>{{aEmployee.email}}</span>
+            </div>
+        </a>
+    </li>
+</ul>

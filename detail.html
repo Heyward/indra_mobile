@@ -1,0 +1,28 @@
+<a id="back" href="#/">Back</a>
+
+<div id="title">Detalle del empleado</div>
+
+<div id="header">
+    <img src="http://54.186.232.121/indra/uploads/{{employee.id}}.png" />
+    <span class="bold">{{employee.name}} {{employee.last_name}}</span>
+</div>
+
+<div id="detail">
+    <div class="box">
+        <span class="bold">Jefe inmediato</span>
+        <br />
+        <span>{{employee.boss.name}}</span>
+    </div>
+    <div class="box">
+        <span class="bold">Email</span>
+        <br />
+        <span>{{employee.email}}</span>
+        <a href="mailto:{{employee.email}}">Enviar email</a>
+    </div>
+    <div class="box">
+        <span class="bold">Telefono</span>
+        <br />
+        <span>{{employee.telephone}}</span>
+        <a href="tel:{{employee.telephone}}">Llamar</a>
+    </div>
+</div>
